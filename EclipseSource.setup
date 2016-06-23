@@ -6,12 +6,12 @@
     xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
     xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0"
     name="eclipsesource"
-    label="EclipseSource">
+    label="EclipseSourceJF">
   <annotation
       source="http://www.eclipse.org/oomph/setup/BrandingInfo">
     <detail
         key="folderName">
-      <value>eclipse</value>
+      <value>neon</value>
     </detail>
     <detail
         key="folderName.macosx">
@@ -152,8 +152,6 @@
       <requirement
           name="org.eclipse.m2e.feature.feature.group"/>
       <requirement
-          name="org.pitest.pitclipse.feature.feature.group"/>
-      <requirement
           name="org.eclipse.emf.ecp.view.section.feature.source.feature.group"/>
       <requirement
           name="org.eclipse.emf.ecp.view.viewproxy.feature.source.feature.group"/>
@@ -169,6 +167,18 @@
           name="org.eclipse.emfforms.editor.feature.source.feature.group"/>
       <requirement
           name="org.eclipse.xtend.sdk.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.edapt.recorder.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.emf.edapt.runtime.feature.feature.group"/>
+      <requirement
+          name="fr.obeo.releng.targetplatform-feature.feature.group"/>
+      <requirement
+          name="org.eclipse.swtbot.eclipse.feature.group"/>
+      <requirement
+          name="org.eclipse.swtbot.feature.group"/>
+      <requirement
+          name="org.eclipse.swtbot.ide.feature.group"/>
       <repository
           url="http://download.eclipse.org/releases/neon"/>
       <repository
@@ -180,11 +190,15 @@
       <repository
           url="http://eclipse-cs.sf.net/update"/>
       <repository
-          url="http://eclipse.pitest.org/release"/>
-      <repository
           url="http://update.eclemma.org"/>
+      <repository
+          url="http://download.eclipse.org/edapt/releases/12x"/>
+      <repository
+          url="http://mbarbero.github.io/fr.obeo.releng.targetplatform/p2/"/>
+      <repository
+          url="http://download.eclipse.org/technology/swtbot/releases/2.4.0/"/>
     </setupTask>
     <description></description>
   </version>
-  <description>To make your life easier, we at EclipseSource would like to share our experience with the Eclipse IDE by sharing our standard settings and installed plug-ins with you. Of course, we sometimes use different settings for different projects, so this is kind of the common denominator and our starting point for new projects. To make this more useful, we will also describe the settings we apply and the plug-ins we install in a blog series.: http://eclipsesource.com/blogs/2015/08/17/introducing-the-eclipsesource-oomph-profile/</description>
+  <description></description>
 </setup:Product>
